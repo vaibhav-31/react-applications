@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  padding: 50px;
+}
+
+.App {
+  padding: 10px;
+  border: 1px solid #eee;
+  display: inline-flex;
+  flex-direction: column;
+  width: 500px;
+
+  .new-product-input {
+    height: 36px;
+    padding: 0px 8px;
+  }
+
+  .add-product-button {
+    height: 36px;
+    padding: 0 8px;
+    margin-left: 8px;
+  }
+
+  ul {
+    margin-top: 2px;
+
+    li {
+      padding: 5px;
+      display: flex;
+    }
+  }
+}
+
+button.delete-button {
+  padding: 0 8px;
+}
+
+span.title {
+  flex: 1;
+}

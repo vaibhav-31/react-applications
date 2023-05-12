@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@600&family=Source+Serif+4:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Serif", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  background-color: rgb(19, 0, 128);
+}
+.logo img{
+  padding-top: 5px;
+  width: 90px;
+  margin-top: 4px;
+  background-color: rgb(240,255,255);
+  padding: 5px;
+  border-radius: 50%;
+  
+}
+
+.logo {
+  width:90px ;
+  padding:6px; 
+  margin-top: 7px;
+}
+
+.menu {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: rgb(255,255,255);
+}
+.service-item {
+  display: none;
+}
+.menuitem.service {
+  padding-top: 16px;
+}
+.devitem {
+  display: none;
+}
+.menuitem {
+  padding: 20px;
+}
+.menuitem:hover {
+  background-color: rgb(21, 7, 100);
+}
+.service {
+  position: relative;
+}
+
+.dev.item,
+.design.item {
+  background-color: rgb(19, 0, 128);
+  height: 30px;
+  padding: 12px 40px 0px 12px;
+  width: 100px;
+  border-width: 1px 0px;
+  border-color: rgb(255,255,255);
+  border-style: dotted;
+  display: flex;
+}
+
+.workWithUs {
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(123,159,223);
+}
+.line1 h2 {
+  padding-top: 35px;
+  color: rgb(240,255,255);
+}
+.line2 h3 {
+  /* border: 2px solid black; */
+  padding-top: 15px;
+  width: 50%;
+  margin: auto;
+  color: rgb(240,255,255);
+  font-size: revert;
+}
+
+.line3 {
+  /* margin-top: -25px; */
+  text-align: center;
+  padding: 20px;
+  font-size: revert;
+  color: rgb(0,9,128);
+  border-top: 2px solid rgb(0, 0, 0);
+}
+button.WorkWithUs.btn {
+  margin: 0px 0px 30px 0px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: rgb(240,255,255);
+  font-weight: bold;
+  background: rgb(19, 0, 128);
+  box-shadow: 4px 4px rgb(0,0,150);
+  border: none;
+  font-size: inherit;
+  display: inline-block;
+}
+
+.recentProject {
+  background-color: rgb(240,255,255);
+  text-align: center;
+  /* display: flex; */
+}
+
+.card {
+  display: inline-table;
+  margin: 10px 50px;
+  border: none;
+  width: 35%;
+  border-radius: 19px;
+  background-color: rgb(19, 0, 128);
+  color:rgb(240,255,255);
+  padding: 20px 25px 5px 25px;
+  height: 170px;
+}
+h3 {
+  text-align: center;
+  padding-bottom: 18px;
+}
+p {
+  text-align: justify;
+  font-size: small;
+  line-height: 15px;
+}
+
+button.btn {
+  display: flex;
+  margin: 15px 0px;
+  background: rgb(195,1,1);
+  color: rgb(240,255,255);
+  padding: 10px;
+  border: none;
+  border-radius: inherit;
+}
+
+.copyright {
+  padding: 18px;
+}
+
+.service:hover .service-item {
+  padding-top: 10px;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+}
+.dev:hover .devitem {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 100%;
+  top: 0px;
+}
+.item:hover {
+  background-color: rgb(21, 7, 100);
+}
+.dev:hover {
+  position: relative;
+}
+.item {
+  background-color: rgb(21, 7, 100);
+  height: 30px;
+  padding: 12px 28px 7px 12px;
+  width: 100px;
+  border-width: 1px 0px;
+  border-color: rgb(255,255,255);
+  border-style: dotted;
+  display: flex;
+}
+ion-icon {
+  color: rgb(255,255,255);
+}
+
+/* /////////////Footer///////////////// */
+
+footer {
+  background-color: rgb(83,83,83);
+  color: rgb(240,255,255);
+  font-size: 16px;
+  min-height: 100px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+/* ////////////////Testimonials/////////////// */
+.line {
+  border: 1px solid rgb(19, 0, 128);
+  margin: 16px 32px;
+}
+.testimonial p {
+  margin: 10px;
+}
+.testimolnisl-card {
+  display: flex;
+}
+
+.testimonial {
+  border: 2px solid rgb(21, 7, 100);
+  background: rgb(238, 238, 238);
+  box-shadow: 4px 4px 4px rgb(21, 7, 100);
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px auto;
+  width: 40%;
+  background-color: rgb(240,255,255);
+  height: 90px;
+  display: table;
+}
+
+.testimonial::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.testimonial img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.testimonial span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .testimonial {
+    text-align: center;
+  }
+  .testimonial img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "graphql-react",
+  "version": "1.0.0",
+  "description": "GraphQl with react & apollo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Vaibhav Vishap",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "axios": "^0.27.2",
+    "concurrently": "^7.2.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^16.5.0",
+    "react-apollo": "^3.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
