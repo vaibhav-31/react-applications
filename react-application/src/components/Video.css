@@ -1,0 +1,28 @@
+.dark {
+    color: white;
+}
+
+.channel {
+    color: white;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+}
+
+.container {
+    position: relative;
+    width: 15em;
+    margin: 0 0.2em;
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+.edit {
+    position: absolute;
+    right: 4em; 
+}
