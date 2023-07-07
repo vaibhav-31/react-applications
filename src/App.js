@@ -1,24 +1,58 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+} from "react-share";
 
 function App() {
+  const [randomImage, setRandomImage] = useState("");
+
+  useEffect(() => {
+    getRandomImage();
+  }, []);
+
+  const getRandomImage = () => {
+    const images = ["https://picsum.photos/200/300"];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    setRandomImage(images[randomIndex]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <h1>Random Image App</h1>
+    <div className="App" style={{
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      height: "100%",
+    }}>
+        <img
+          src={randomImage}
+          alt="Random Image"
+        />
+
+      <div style={{ marginLeft: "20px" }}>
+        <div>
+          <FacebookShareButton url={window.location.href}>
+            Share on Facebook
+          </FacebookShareButton>
+        </div>
+
+        <div>
+          <TwitterShareButton url={window.location.href}>
+            Share on Twitter
+          </TwitterShareButton>
+        </div>
+
+        <div>
+          <WhatsappShareButton url={window.location.href}>
+            Share on WhatsApp
+          </WhatsappShareButton>
+        </div>
+      </div>
     </div>
+  </>
   );
 }
 
